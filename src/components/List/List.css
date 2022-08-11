@@ -20,3 +20,31 @@
 .ListItem:active {
     background-color: #ccc;
 }
+
+.fade-enter{}
+.fade-enter-active{
+    animation: fadeIn .3s ease-in-out forwards;
+}
+
+.fade-exit{}
+.fade-exit-active{
+    animation: fadeOut .3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

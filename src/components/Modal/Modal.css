@@ -11,3 +11,41 @@
     left: 25%;
     width: 50%;
 }
+
+.ModalOpen{
+    animation: modalOpen .4s ease-out forwards;
+}
+
+.ModalClosed{
+    animation: modalClosed 1s ease-out forwards;
+}
+
+@keyframes modalOpen {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50%{
+        opacity: 1;
+        transform: translateY(20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes modalClosed {
+    0%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50%{
+        opacity: 0.8;
+        transform: translateY(60%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
